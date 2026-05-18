@@ -1,16 +1,7 @@
-# React + Vite
+# Welcome to my portfolio/personal website!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My name is Tyler Tang, and I am a student at UW-Madison majoring in Computer Science. I am currently looking for work, so I created this website to showcase my projects and experiences.
 
-Currently, two official plugins are available:
+## About the website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This website was created independently by me. Libraries I used include Framer-Motion, React-Router and Lucide Icons. I used the Vite environment to do most of my coding, keep the code on GitHub, and host the website on Vercel. Programmed using React, JavaScript, and CSS.

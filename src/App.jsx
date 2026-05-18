@@ -151,7 +151,7 @@ function App() {
               <p style={{ width: "60%", margin: "0 auto" }}>
                 Built using React, JavaScript and CSS. Hosted on Vercel. Full
                 website code can be found on my GitHub{" "}
-                <a href="" target="_blank">
+                <a href="https://github.com/TT6577/personal-website" target="_blank">
                   here.
                 </a>
               </p>
