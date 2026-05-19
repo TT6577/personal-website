@@ -1,4 +1,10 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import chargedfield from "../assets/chargedfield.JPG";
+import hockeybasketball from "../assets/hockeybasketball.JPG";
+import littlepaperhat from "../assets/littlepaperhat.jpg";
+import playwithwater from "../assets/playwithwater.jpg";
+import rexthomaspic from "../assets/rexthomaspic.JPG";
 
 export default function Experience() {
   return (
@@ -8,76 +14,118 @@ export default function Experience() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.3 }}
     >
-      <div className={"flex-down"} style={{ textAlign: "left", alignContent: 'left' }}>
-        <h1>Projects</h1>
-        <div
-          className="card"
-          onClick={() => window.open("https://tt6577.github.io/p2/", "_blank")}
-          style={{ cursor: "pointer" }}
-        >
+      <div
+        className={"flex-down"}
+        style={{ textAlign: "left", alignContent: "left" }}
+      >
+        <h1>Work Experience</h1>
+        <div className="card">
           <div className="container">
             <h4>
-              <b>UW-Madison CS Advising Website</b> - March, 2026 ~ May, 2026
+              <b>Summer Camp Counselor/Instructor</b> - May 2023 ~ July 2025 (Summers
+              only)
             </h4>
-            <p>Placeholder</p>
+            <h5>Taipei Youth Program Association</h5>
+            <hr style={{ border: "1px solid #ccc", margin: "5px 0" }} />
+            <ul style={{ padding: "1rem" }}>
+              <li>
+                Led 2-3 counselors in supervising daily activities for 15-25
+                children aged 5-12 through daily activities, ensuring safety and
+                engagement
+              </li>
+              <li>
+                Worked closely with special needs students to foster an
+                inclusive and diverse environment
+              </li>
+              <li>
+                Sole returning counselor promoted to instructor based on
+                proactive leadership and teaching potential
+              </li>
+              <li>
+                Planned and facilitated age-appropriate fitness activities to
+                children of various ages and abilities
+              </li>
+            </ul>
             <a
-              href="https://github.com/TT6577/p2"
+              href="https://www.typa.org.tw/course/summer-camps/day-camp-a-taste-of-typa-2/"
               target="_blank"
               onClick={(e) => e.stopPropagation()} // prevents card click from firing too
             >
-              Full code here.
+              Summer Camp website found here.
             </a>
           </div>
         </div>
 
-        <div
-          className="card"
-          onClick={() =>
-            window.open("https://kanban-app-prototype.vercel.app/", "_blank")
-          }
-          style={{ cursor: "pointer" }}
-        >
+        <h1>Leadership Experience</h1>
+
+        <div className="card">
           <div className="container">
             <h4>
-              <b>Kanban Task Manager</b> - April 4, 2026
+              <b>Finance Chair/Treasurer</b> - April 2025 ~ Present
             </h4>
-            <p>placeholder</p>
+            <h5>Chinese American Student Association (CHASA)</h5>
+            <hr style={{ border: "1px solid #ccc", margin: "5px 0" }} />
+            <ul style={{ padding: "1rem" }}>
+              <li>
+                Manages and records association funds and set budgets for
+                outings & events, ~8000USD total yearly budget
+              </li>
+              <li>
+                Organizes fundraising events and collaboration opportunities
+                with local restaurants
+              </li>
+              <li>
+                Group lead for concessions at UW-Madison affiliated sports
+                centers in order to raise money for events
+              </li>
+            </ul>
             <a
-              href="https://github.com/TT6577/kanban-app-prototype"
+              href=""
               target="_blank"
               onClick={(e) => e.stopPropagation()} // prevents card click from firing too
             >
-              Full code here.
-            </a>
-            <br />
-            <a
-              target="_blank"
-              onClick={(e) => e.stopPropagation()} // prevents card click from firing too
-            >
-              Read the writeup here!
+              My in-progress CHASA website link will be here once I am done with it!
             </a>
           </div>
         </div>
 
-        <div
-          className="card"
-          onClick={() =>
-            window.open(
-              "https://rainbow-mousse-9e3439.netlify.app/cs272-wordpress.cs.wisc.edu/s26/p2-site/index.html",
-              "_blank",
-            )
-          }
-          style={{ cursor: "pointer" }}
-        >
+        <div className="card">
           <div className="container">
             <h4>
-              <b>MAD Eats - Madison Food Review</b> - January, 2026 ~ March,
-              2026
+              <b>Statistics Programmer & Scout Manager</b> - April 2023 ~ July
+              2024
             </h4>
-            <p>
-              Placeholder
-            </p>
+            <h5>FIRST Robotics Competition</h5>
+            <hr style={{ border: "1px solid #ccc", margin: "5px 0" }} />
+            <ul style={{ padding: "1rem" }}>
+              <li>
+                Sole developer of statistics recording website used across two
+                FRC teams in multiple international competitions
+              </li>
+              <li>
+                Communicated game plans and scouting data between scouting and
+                driver teams
+              </li>
+              <li>
+                Analyzed game data through the website to predict game outcomes
+                and prepare game plans
+              </li>
+              <li>
+                Managed multiple teams of scouts to record data and interview
+                teams to create alliances & mentored programmers
+              </li>
+            </ul>
+            <p>See more about scouting website on <Link to="/projects">projects</Link> page</p>
           </div>
+        </div>
+
+        <h1>Gallery</h1>
+        <div className={"flex-down"}>
+          <img src={chargedfield} />
+          <img src={rexthomaspic} />
+          <img src={playwithwater} />
+          <img src={hockeybasketball} />
+          <img src={littlepaperhat} />
         </div>
       </div>
     </motion.div>
