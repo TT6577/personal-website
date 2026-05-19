@@ -24,6 +24,9 @@ import Projects from "./pages/Projects.jsx";
 import Coursework from "./pages/Coursework.jsx";
 import Contacts from "./pages/Contacts.jsx";
 
+// Vercel Analytics
+import { Analytics } from "@vercel/analytics/react";
+
 import resume from "./assets/Tyler Tang Resume.pdf";
 import writeup from "./assets/Tyler Tang - Task Manager - Side Project Write Up.pdf";
 import photo from "./assets/TylerPicSquareSmall.jpg";
@@ -47,8 +50,10 @@ function AnimatedRoutes() {
 function App() {
 
   return (
-    <div style={{ height: "100vh", overflow: "hidden" }}>
-      <BrowserRouter>
+    <>
+      <Analytics />
+      <div style={{ height: "100vh", overflow: "hidden" }}>
+        <BrowserRouter>
         {/* Main div holding all content */}
         <div className={"flex-side"} style={{ height: "100%", gap: "0px" }}>
           {/* Left side of the screen, where the header goes */}
@@ -159,7 +164,8 @@ function App() {
           </div>
         </div>
       </BrowserRouter>
-    </div>
+      </div>
+    </>
   );
 }
 
