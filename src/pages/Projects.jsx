@@ -4,6 +4,7 @@ import frcpic from "../assets/frcpic.png";
 import advisorpic from "../assets/advisorpic.png";
 import foodiepic from "../assets/foodiepic.png";
 import writeup from "../assets/Tyler Tang - Task Manager - Side Project Write Up.pdf";
+import { ExternalLink } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -16,7 +17,7 @@ export default function Projects() {
       <div className={"flex-down"} style={{ textAlign: "left" }}>
         <h1>Projects</h1>
         <div
-          className="card"
+          className="card hoverable"
           onClick={() => window.open("https://tt6577.github.io/p2/", "_blank")}
           style={{ cursor: "pointer" }}
         >
@@ -39,11 +40,12 @@ export default function Projects() {
             >
               Full code here.
             </a>
+            <ExternalLink style={{ float: "right" }} />
           </div>
         </div>
 
         <div
-          className="card"
+          className="card hoverable"
           onClick={() =>
             window.open("https://kanban-app-prototype.vercel.app/", "_blank")
           }
@@ -76,11 +78,12 @@ export default function Projects() {
             >
               Read the writeup here!
             </a>
+            <ExternalLink style={{ float: "right" }} />
           </div>
         </div>
 
         <div
-          className="card"
+          className="card hoverable"
           onClick={() =>
             window.open(
               "https://rainbow-mousse-9e3439.netlify.app/cs272-wordpress.cs.wisc.edu/s26/p2-site/index.html",
@@ -102,11 +105,12 @@ export default function Projects() {
               ratings, user comments and detailed maps. Created using WordPress,
               hosted on Netlify.
             </p>
+            <ExternalLink style={{ float: "right" }} />
           </div>
         </div>
 
         <div
-          className="card"
+          className="card hoverable"
           onClick={() =>
             window.open(
               "https://two024-frc-scouting-website-resume-code.onrender.com/",
@@ -123,10 +127,10 @@ export default function Projects() {
             </h4>
             <p>
               This website was made for my two high school FIRST robotics teams,
-              serving around 30 students during our international robotics
+              serving around 100 students during our international robotics
               competitions. I worked with a team of 5 statistics team members to
-              create an optimal scouting form. Created using Flask, Google APIs,
-              basic SQL, Python and HTML, hosted on Render.
+              create an optimal scouting form. Still in use today! Created using
+              Flask, Google APIs, basic SQL, Python and HTML, hosted on Render.
             </p>
             <a
               href="https://github.com/TT6577/2024-FRC-Scouting-Website-Resume-Code"
@@ -135,6 +139,7 @@ export default function Projects() {
             >
               Full code here.
             </a>
+            <ExternalLink style={{ float: "right" }} />
           </div>
         </div>
       </div>

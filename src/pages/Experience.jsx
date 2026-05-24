@@ -5,6 +5,10 @@ import hockeybasketball from "../assets/hockeybasketball.JPG";
 import littlepaperhat from "../assets/littlepaperhat.jpg";
 import playwithwater from "../assets/playwithwater.jpg";
 import rexthomaspic from "../assets/rexthomaspic.JPG";
+import chasarep from "../assets/chasarep.jpg";
+import concessions from "../assets/concessions.jpg";
+import fam from "../assets/fam.JPG";
+import dance from "../assets/dance.JPG";
 
 export default function Experience() {
   return (
@@ -22,8 +26,8 @@ export default function Experience() {
         <div className="card">
           <div className="container">
             <h4>
-              <b>Summer Camp Counselor/Instructor</b> - May 2023 ~ July 2025 (Summers
-              only)
+              <b>Summer Camp Counselor/Instructor</b> - May 2023 ~ July 2025
+              (Summers only)
             </h4>
             <h5>Taipei Youth Program Association</h5>
             <hr style={{ border: "1px solid #ccc", margin: "5px 0" }} />
@@ -84,7 +88,8 @@ export default function Experience() {
               target="_blank"
               onClick={(e) => e.stopPropagation()} // prevents card click from firing too
             >
-              My in-progress CHASA website link will be here once I am done with it!
+              My in-progress CHASA website link will be here once I am done with
+              it!
             </a>
           </div>
         </div>
@@ -115,17 +120,135 @@ export default function Experience() {
                 teams to create alliances & mentored programmers
               </li>
             </ul>
-            <p>See more about scouting website on <Link to="/projects">projects</Link> page</p>
+            <p>
+              See more about scouting website on{" "}
+              <Link to="/projects">projects</Link> page
+            </p>
           </div>
         </div>
 
         <h1>Gallery</h1>
         <div className={"flex-down"}>
-          <img src={chargedfield} />
-          <img src={rexthomaspic} />
-          <img src={playwithwater} />
-          <img src={hockeybasketball} />
-          <img src={littlepaperhat} />
+          <div>
+            <h2>Chinese American Student Association</h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "10px",
+                margin: "1rem 0",
+              }}
+            >
+              <img
+                src={chasarep}
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+              <img
+                src={concessions}
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+              <img
+                src={fam}
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+              <img
+                src={dance}
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+            </div>
+          </div>
+          <div>
+            <h2>TYPA Summer Camp</h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 4fr",
+                gap: "10px",
+                margin: "1rem 0",
+              }}
+            >
+              <img
+                src={littlepaperhat}
+                style={{
+                  width: "100%",
+                  height: "600px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                  gridRow: "span 2",
+                }}
+              />
+              <img
+                src={playwithwater}
+                style={{
+                  width: "100%",
+                  height: "295px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+
+              <img
+                src={hockeybasketball}
+                style={{
+                  width: "100%",
+                  height: "295px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+            </div>
+          </div>
+
+          <div>
+            <h2>FIRST Robotics Competition</h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "10px",
+                margin: "1rem 0",
+              }}
+            >
+              <img
+                src={rexthomaspic}
+                style={{
+                  width: "100%",
+                  height: "600px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+              <img
+                src={chargedfield}
+                style={{
+                  width: "100%",
+                  height: "600px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>

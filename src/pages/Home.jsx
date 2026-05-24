@@ -57,7 +57,6 @@ export default function Home() {
         <div className={"flex-side"} style={{justifyContent: 'center'}}>
           <Link to="/experience">Experience</Link>
           <Link to="/projects">Projects</Link>
-          <Link to="/coursework">Coursework</Link>
           <Link to="/contacts">Contacts</Link>
         </div>
       </div>

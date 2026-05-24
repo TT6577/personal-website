@@ -23,6 +23,7 @@ import {
   Route,
   Link,
   useLocation,
+  NavLink,
 } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Experience from "./pages/Experience.jsx";
@@ -39,6 +40,21 @@ import resume from "./assets/Tyler Tang Resume.pdf";
 import writeup from "./assets/Tyler Tang - Task Manager - Side Project Write Up.pdf";
 import photo from "./assets/TylerPicSquareSmall.jpg";
 
+import bgpattern from "./assets/circuit-board.svg";
+import linkspattern from "./assets/rbwstripepattern.png";
+import halopattern from "./assets/blackhalo.png";
+import bannerpattern from "./assets/blackbannerpattern.png";
+
+/**
+  Color Scheme:
+  UW-Madison Red: #C5050C
+  UW-Madison White: #FFFFFF
+  Darker Red: #980C38
+  Dark blue: #162538
+  Lighter Red: #F32D3E
+  Darker blue: #061521
+ */
+
 function AnimatedRoutes() {
   const location = useLocation();
 
@@ -48,7 +64,6 @@ function AnimatedRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/coursework" element={<Coursework />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </AnimatePresence>
@@ -66,64 +81,102 @@ function App() {
           <div className={"flex-side"} style={{ height: "100%", gap: "0px" }}>
             {/* Left side of the screen, where the header goes */}
             <div
-              id={"header"}
-              className={"flex-down"}
+              id="header"
+              className="flex-down"
               style={{
-                flex: 1,
+                flex: 1.25,
                 textAlign: "left",
-                padding: "2rem",
-                backgroundColor: "",
-                border: "5px solid",
-                borderRadius: "20px",
                 height: "100%",
+                backgroundColor: "#FFFFFF",
+                color: "#C5050C",
+                overflow: "hidden", // keeps red bg from bleeding past the border-radius
+                border: "#C5050C none",
+                borderRight: "5px solid",
               }}
             >
-              <img
-                src={photo}
+              {/* Red profile section */}
+              <div
+                className={"flex-down"}
                 style={{
-                  width: "150px",
-                  height: "150px",
-                  borderRadius: "50%",
-                  objectFit: "cover",
-                }}
-              />
-              <p
-                style={{
-                  fontSize: "50px",
-                  color: "white",
-                  marginBottom: "10px",
+                  backgroundColor: "#C5050C",
+                  padding: "2rem",
+                  paddingBottom: "0",
+                  color: "#fff",
                 }}
               >
-                Tyler Tang
-              </p>
+                <div
+                  style={{
+                    position: "fixed",
+                    inset: 0,
+                    backgroundImage: `url(${halopattern})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "300px 300px",
+                    backgroundPosition: "-38px -38px",
+                    color: "white",
+                    opacity: 0.3,
+                    pointerEvents: "none",
+                    zIndex: -0,
+                  }}
+                />
+                <img
+                  src={photo}
+                  style={{
+                    width: "150px",
+                    height: "150px",
+                    borderRadius: "50%",
+                    objectFit: "cover",
+                  }}
+                />
+                <p
+                  style={{
+                    fontSize: "45px",
+                    color: "#fff",
+                    marginBottom: "0px",
+                    zIndex: 3,
+                  }}
+                >
+                  Tyler Tang
+                </p>
+                <h2 style={{ color: "#fff", paddingBottom: '10px' }}>
+                  Computer Science Student & Developer
+                </h2>
+              </div>
 
-              <h2>Computer Science Student & Developer</h2>
-              <p>
-                CS student at UW-Madison, graduating December 2027. I build
-                websites primarily using React and TypeScript!
-              </p>
-              <h2>Links</h2>
-              <a href="https://github.com/TT6577" target="_blank">
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/tyler-tang-155a82322/"
-                target="_blank"
+              {/* Links section — default background */}
+              <div
+                className={"flex-down"}
+                style={{ padding: "2rem", paddingTop: "0", gap:"10px"}}
               >
-                LinkedIn
-              </a>
-              <a href={resume} target="_blank">
-                Resume
-              </a>
-              <a href="https://kanban-app-prototype.vercel.app" target="_blank">
-                Kanban Board Website
-              </a>
-              <a href={writeup} target="_blank">
-                Kanban Project Writeup
-              </a>
-              <a href="https://tt6577.github.io/p2/" target="_blank">
-                WebDev Class Project
-              </a>
+                <p style={{ color: "#121212" }}>
+                  CS student at UW-Madison, graduating December 2027. I build
+                  websites primarily using React and TypeScript!
+                </p>
+                <h2 style={{ color: "#121212" }}>Links</h2>
+                <a href="https://github.com/TT6577" target="_blank">
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/tyler-tang-155a82322/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
+                <a href={resume} target="_blank">
+                  Resume
+                </a>
+                <a
+                  href="https://kanban-app-prototype.vercel.app"
+                  target="_blank"
+                >
+                  Kanban Board Website
+                </a>
+                <a href={writeup} target="_blank">
+                  Kanban Project Writeup
+                </a>
+                <a href="https://tt6577.github.io/p2/" target="_blank">
+                  WebDev Class Project
+                </a>
+              </div>
             </div>
 
             {/* Right side of screen, where most of the content goes */}
@@ -133,6 +186,7 @@ function App() {
                 flex: 3,
                 overflowY: "scroll",
                 height: "100vh",
+                position: "relative",
               }}
             >
               {/* Navbar */}
@@ -143,27 +197,65 @@ function App() {
                   paddingBottom: "20px",
                   paddingTop: "1.5rem",
                   paddingLeft: "2rem",
+                  gap: "20px",
                 }}
               >
-                <Link to="/">Home</Link>
-                <Link to="/experience">Experience</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/coursework">Coursework</Link>
-                <Link to="/contacts">Contacts</Link>
+                <div
+                  style={{
+                    position: "fixed",
+                    inset: 0,
+                    backgroundImage: `url(${bannerpattern})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "1043px 100px",
+                    backgroundPosition: "400px -12px",
+                    color: "white",
+                    opacity: 0.3,
+                    pointerEvents: "none",
+                    zIndex: -1,
+                  }}
+                />
+                <NavLink className="nav-link" to="/">
+                  Home
+                </NavLink>
+                <NavLink className="nav-link" to="/experience">
+                  Experience
+                </NavLink>
+                <NavLink className="nav-link" to="/projects">
+                  Projects
+                </NavLink>
+                <NavLink className="nav-link" to="/contacts">
+                  Contacts
+                </NavLink>
               </div>
 
               {/* Displays designated pages */}
               <div
                 style={{
-                  border: "5px dotted",
-                  borderRadius: "1rem",
+                  border: "#121212 dashed 5px",
                   paddingLeft: "2rem",
                   paddingBottom: "2rem",
                   paddingRight: "2rem",
                   minHeight: "90.5%",
                   overflow: "hidden",
+                  backgroundColor: "#FFFFFF",
+                  color: "#121212",
+                  position: "relative",
+                  zIndex: 1,
                 }}
               >
+                {/* Background pattern */}
+                <div
+                  style={{
+                    position: "fixed",
+                    inset: 0,
+                    backgroundImage: `url(${bgpattern})`,
+                    backgroundRepeat: "repeat",
+                    backgroundSize: "1000px 1000px",
+                    opacity: 0.03,
+                    pointerEvents: "none",
+                    zIndex: -1,
+                  }}
+                />
                 <AnimatedRoutes />
                 <div style={{ height: "180px" }}></div>
                 <p style={{ width: "60%", margin: "0 auto" }}>
