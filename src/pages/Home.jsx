@@ -16,12 +16,15 @@ export default function Home() {
         <p>
           {" "}
           My name is Tyler, I am 20, and I am from Taipei, Taiwan. I am
-          currently a rising junior at the University of Wisconsin-Madison, and
-          I am majoring in Computer Science. I plan to graduate December of
-          2027, and I am currently looking for my first internship/job! I'm
-          really interested in getting into the field of software engineering,
-          and I specialize in React and TypeScript, with a solid foundation in
-          JavaScript/HTML/CSS.{" "}
+          currently a rising junior at the{" "}
+          <span className={"hl"}>University of Wisconsin-Madison</span>, and I
+          am majoring in Computer Science. I plan to graduate December of 2027,
+          and I am currently looking for my first internship/job! I'm really
+          interested in getting into the field of software engineering, and I
+          specialize in <span className={"hl"}>React</span>
+          &nbsp;and&nbsp;
+          <span className={"hl"}>TypeScript</span>, with a solid foundation in{" "}
+          <span className={"hl"}>JavaScript/HTML/CSS</span>.{" "}
         </p>
         <h2>Currently...</h2>
         <p>
@@ -37,8 +40,9 @@ export default function Home() {
         <p>
           The other project is a website for my social/cultural student
           organization, the Chinese American Student Association @ UW-Madison. A
-          website would help serve 200+ members with event & alumni archives,
-          fam leaderboards, and other org info and resources.{" "}
+          website would help <span className={"hl"}>serve 200+ members</span>{" "}
+          with event & alumni archives, fam leaderboards, and other org info and
+          resources.{" "}
         </p>
         <h2>Hobbies/Interests</h2>
         <p>
@@ -54,7 +58,7 @@ export default function Home() {
 
       <div>
         <h2>Check out my other pages to learn more about me!</h2>
-        <div className={"flex-side"} style={{justifyContent: 'center'}}>
+        <div className={"flex-side"} style={{ justifyContent: "center" }}>
           <Link to="/experience">Experience</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contacts">Contacts</Link>

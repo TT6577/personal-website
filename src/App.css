@@ -130,3 +130,8 @@ a:hover {
   background-color: #ed070e;
   z-index: -1;
 }
+
+.hl {
+  color: #C5050C;
+  font-weight: bold;
+}

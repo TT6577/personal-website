@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import "./App.css";
 
 // Icons library
@@ -14,7 +12,7 @@ import {
 } from "lucide-react";
 
 // Slide animation library
-import { AnimatePresence, dimensionValueTypes, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 // Different pages
 import {
@@ -28,7 +26,6 @@ import {
 import Home from "./pages/Home.jsx";
 import Experience from "./pages/Experience.jsx";
 import Projects from "./pages/Projects.jsx";
-import Coursework from "./pages/Coursework.jsx";
 import Contacts from "./pages/Contacts.jsx";
 
 import ScrollToTop from "./components/ScrollToTop.jsx";
