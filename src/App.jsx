@@ -3,12 +3,7 @@ import "./App.css";
 
 // Icons library
 import {
-  AlertTriangle,
-  Search,
-  Tag,
-  SquareKanban,
-  ClipboardList,
-  ListPlus,
+  FileDown, ExternalLink,
 } from "lucide-react";
 
 // Slide animation library
@@ -41,16 +36,6 @@ import bgpattern from "./assets/circuit-board.svg";
 import linkspattern from "./assets/rbwstripepattern.png";
 import halopattern from "./assets/blackhalo.png";
 import bannerpattern from "./assets/blackbannerpattern.png";
-
-/**
-  Color Scheme:
-  UW-Madison Red: #C5050C
-  UW-Madison White: #FFFFFF
-  Darker Red: #980C38
-  Dark blue: #162538
-  Lighter Red: #F32D3E
-  Darker blue: #061521
- */
 
 function AnimatedRoutes() {
   const location = useLocation();

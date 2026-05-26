@@ -1,6 +1,9 @@
 import resume from "../assets/Tyler Tang Resume.pdf";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import {
+  FileDown, ExternalLink,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -78,12 +81,14 @@ export default function Home() {
         Take a copy of my resume with you as you leave!
       </h1>
       <a href={resume} download="Tyler Tang - Resume">
-        Download
+        Download{" "}
+        <FileDown/>
       </a>
       <div style={{ height: "50px" }}></div>
       <h1>... or just take a quick peek.</h1>
       <a href={resume} target="_blank" rel="noopener noreferrer">
-        View Resume
+        View Resume{" "}
+        <ExternalLink/>
       </a>
     </motion.div>
   );
