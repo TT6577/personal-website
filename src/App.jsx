@@ -213,7 +213,7 @@ function App() {
               {/* Displays designated pages */}
               <div
                 style={{
-                  border: "#121212 dashed 5px",
+                  border: "#121212 dotted 5px",
                   paddingLeft: "2rem",
                   paddingBottom: "2rem",
                   paddingRight: "2rem",
