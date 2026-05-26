@@ -5,10 +5,10 @@ import hockeybasketball from "../assets/hockeybasketball.JPG";
 import littlepaperhat from "../assets/littlepaperhat.jpg";
 import playwithwater from "../assets/playwithwater.jpg";
 import rexthomaspic from "../assets/rexthomaspic.JPG";
-import chasarep from "../assets/chasarep.jpg";
-import concessions from "../assets/concessions.jpg";
+import chasarep from "../assets/chasarep.JPG";
+import concessions from "../assets/concessions.JPG";
 import fam from "../assets/fam.JPG";
-import dance from "../assets/dance.JPG";
+import dance from "../assets/dance.jpg";
 
 export default function Experience() {
   return (
