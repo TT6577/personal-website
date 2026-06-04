@@ -88,8 +88,7 @@ export default function Experience() {
               target="_blank"
               onClick={(e) => e.stopPropagation()} // prevents card click from firing too
             >
-              My in-progress CHASA website link will be here once I am done with
-              it!
+              CHASA website found here.
             </a>
           </div>
         </div>

@@ -3,6 +3,7 @@ import kanbanpic from "../assets/kanbanpic.png";
 import frcpic from "../assets/frcpic.png";
 import advisorpic from "../assets/advisorpic.png";
 import foodiepic from "../assets/foodiepic.png";
+import chasapic from "../assets/chasapic.png";
 import writeup from "../assets/Tyler Tang - Task Manager - Side Project Write Up.pdf";
 import { ExternalLink } from "lucide-react";
 
@@ -16,6 +17,37 @@ export default function Projects() {
     >
       <div className={"flex-down"} style={{ textAlign: "left" }}>
         <h1>Projects</h1>
+        <div
+          className="card hoverable"
+          onClick={() =>
+            window.open("https://chasa-uwmadison.vercel.app/", "_blank")
+          }
+          style={{ cursor: "pointer" }}
+        >
+          <img src={chasapic} alt="CHASAPic" width={"40%"} />
+          <div className="container">
+            <h4>
+              <b>UW-Madison CS Advising Website</b> - March, 2026 ~ May, 2026
+            </h4>
+            <p>
+              This was a personal project for my social/cultural club, the
+              Chinese American Student Association. PC/Tablet/Mobile
+              compatitive, this website is the best demonstration of my UI/UX
+              design skills. Serving 200+ members, it helps our relatively small
+              club share vital info about events. Created using React and
+              Tailwind CSS, hosted on Vercel.
+            </p>
+            <a
+              href="https://github.com/TT6577/CHASA-UWMadison"
+              target="_blank"
+              onClick={(e) => e.stopPropagation()} // prevents card click from firing too
+            >
+              Full code here.
+            </a>
+            <ExternalLink style={{ float: "right" }} />
+          </div>
+        </div>
+
         <div
           className="card hoverable"
           onClick={() => window.open("https://tt6577.github.io/p2/", "_blank")}
