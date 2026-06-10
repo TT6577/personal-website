@@ -27,7 +27,7 @@ export default function Projects() {
           <img src={chasapic} alt="CHASAPic" width={"40%"} />
           <div className="container">
             <h4>
-              <b>UW-Madison CS Advising Website</b> - March, 2026 ~ May, 2026
+              <b>CHASA Club Website</b> - May 2026 ~ Current
             </h4>
             <p>
               This was a personal project for my social/cultural club, the
