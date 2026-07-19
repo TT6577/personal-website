@@ -23,6 +23,45 @@ export default function Experience() {
         style={{ textAlign: "left", alignContent: "left" }}
       >
         <h1>Work Experience</h1>
+
+        <div className="card">
+          <div className="container">
+            <h4>
+              <b>Frontend Developer, Nisinoon Project</b> - May 2026 ~ Present
+            </h4>
+            <h5>Wisconsin Indigenous Languages Lab, UW–Madison.</h5>
+            <h5>
+              Remote | NSF-funded Algonquian language database used by linguists
+              and tribal communities for language revitalization
+            </h5>
+            <hr style={{ border: "1px solid #ccc", margin: "5px 0" }} />
+            <ul style={{ padding: "1rem" }}>
+              <li>
+                Redesigning and rebuilding the frontend of nisinoon.net in
+                vanilla HTML/CSS/JS integrated with a Node.js/Express backend,
+                collaborating weekly with the project lead and UX designer
+              </li>
+              <li>
+                Fixed bugs in and added new functionality to the site's search
+                system, and led a redesign of the homepage and search interface
+                (multi-language filtering, reorganized advanced-search fields)
+                based on specs from the project lead and UX designer
+              </li>
+              <li>
+                Improved page load time by optimizing graphics and image assets
+                across high-traffic pages
+              </li>
+            </ul>
+            <a
+              href="https://nisinoon.net/"
+              target="_blank"
+              onClick={(e) => e.stopPropagation()} // prevents card click from firing too
+            >
+              Nisinoon website found here.
+            </a>
+          </div>
+        </div>
+
         <div className="card">
           <div className="container">
             <h4>

@@ -4,6 +4,7 @@ import frcpic from "../assets/frcpic.png";
 import advisorpic from "../assets/advisorpic.png";
 import foodiepic from "../assets/foodiepic.png";
 import chasapic from "../assets/chasapic.png";
+import nisinoonpic from "../assets/nisinoonpic.png";
 import writeup from "../assets/Tyler Tang - Task Manager - Side Project Write Up.pdf";
 import { ExternalLink } from "lucide-react";
 
@@ -17,6 +18,36 @@ export default function Projects() {
     >
       <div className={"flex-down"} style={{ textAlign: "left" }}>
         <h1>Projects</h1>
+
+        <div
+          className="card hoverable"
+          onClick={() => window.open("https://nisinoon.net/", "_blank")}
+          style={{ cursor: "pointer" }}
+        >
+          <img src={nisinoonpic} alt="NisinoonPic" width={"40%"} />
+          <div className="container">
+            <h4>
+              <b>Nisinoon Website</b> - May 2026 ~ Current
+            </h4>
+            <p>
+              This is the project I'm currently working on during the summer. I
+              joined this project through the UW-Madison CS Marketplace program,
+              and now I'm helping them update their website. I was not
+              responsible for creating the website, the website was already
+              functional by the time I joined, but I am currently improving its
+              functionality and fixing major bugs!
+            </p>
+            <a
+              href="https://github.com/Nisinoon/Nisinoon"
+              target="_blank"
+              onClick={(e) => e.stopPropagation()} // prevents card click from firing too
+            >
+              Full code here.
+            </a>
+            <ExternalLink style={{ float: "right" }} />
+          </div>
+        </div>
+
         <div
           className="card hoverable"
           onClick={() =>
