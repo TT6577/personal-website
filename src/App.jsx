@@ -155,8 +155,11 @@ function App() {
                 <a href={writeup} target="_blank">
                   Kanban Project Writeup
                 </a>
-                <a href="https://tt6577.github.io/p2/" target="_blank">
-                  WebDev Class Project
+                <a href="https://chasa-uwmadison.vercel.app/" target="_blank">
+                  CHASA Website
+                </a>
+                <a href="https://nisinoon.net/" target="_blank">
+                  Nisinoon Website
                 </a>
               </div>
             </div>
@@ -249,6 +252,7 @@ function App() {
                   >
                     here.
                   </a>
+                  {" "}Last updated 7/29/2026.
                 </p>
               </div>
             </div>
