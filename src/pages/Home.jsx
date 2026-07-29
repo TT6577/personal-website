@@ -1,9 +1,7 @@
 import resume from "../assets/Tyler Tang Resume.pdf";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {
-  FileDown, ExternalLink,
-} from "lucide-react";
+import { FileDown, ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
@@ -35,17 +33,34 @@ export default function Home() {
           website was the first thing on my list.
         </p>
         <p>
-          The second project is a restaurant recommendation website, which will
-          be a two person project where I collaborate with my girlfriend (a data
-          science major) to analyze people's tastes and recommend them
-          restaurants in Madison.{" "}
-        </p>
-        <p>
           The other project is a website for my social/cultural student
           organization, the Chinese American Student Association @ UW-Madison. A
           website would help <span className={"hl"}>serve 200+ members</span>{" "}
           with event & alumni archives, fam leaderboards, and other org info and
           resources.{" "}
+        </p>
+        <p>
+          I'm currently working on the{" "}
+          <span className={"hl"}>
+            Nisinoon Project, a project run by the Wisconsin Indigenous
+            Languages Lab
+          </span>{" "}
+          at UW–Madison. It's a Native American language database used by
+          linguists and tribal communities for language revitalization. I'm
+          working on updating their frontend to be more user friendly, fixing
+          bugs behind the scenes, and adding backend functionality in the form
+          of improving search functions.
+        </p>
+        <p>
+          <span className={"hl"}>It's a lot of fun!</span> Getting my first work
+          experience in the world of tech is pretty exciting and fulfilling, and
+          I get a decent scholarship for completing this. I'm learning to go
+          through official work "cycles" like adding issues, creating pull
+          requests, and resolving merge conflicts on a massive project with
+          other peoples code.{" "}
+          <span className={"hl"}>
+            I'm hoping this leads me to another internship next year!
+          </span>
         </p>
         <h2>Hobbies/Interests</h2>
         <p>
@@ -81,14 +96,12 @@ export default function Home() {
         Take a copy of my resume with you as you leave!
       </h1>
       <a href={resume} download="Tyler Tang - Resume">
-        Download{" "}
-        <FileDown/>
+        Download <FileDown />
       </a>
       <div style={{ height: "50px" }}></div>
       <h1>... or just take a quick peek.</h1>
       <a href={resume} target="_blank" rel="noopener noreferrer">
-        View Resume{" "}
-        <ExternalLink/>
+        View Resume <ExternalLink />
       </a>
     </motion.div>
   );
